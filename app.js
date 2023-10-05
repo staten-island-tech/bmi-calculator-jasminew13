@@ -6,17 +6,16 @@ function bmicalculator(w,h){
  }
 
  function checkbmi(){
-    
+    let BMI = bmicalculator(w,h);
  }
 
  function ok(){
-    let BMI = bmicalculator(w,h);
     checkbmi(BMI);
-    if (BMI < 18.5){
+    if (BMI < 18.5) {
         console.log("underweight");
-    }else if (BMI >= 24.9 && BMI >18.5){
+    } else if (BMI >= 24.9 && BMI >18.5) {
         console.log("healthy");
-    }else if (BMI > 30){
+    } else if (BMI > 30) {
         console.log("overweight");
     }
     }
