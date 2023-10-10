@@ -2,9 +2,9 @@
     const h = Number(prompt("enter your height in cm"));
 
  function getBMI(){
-    return w / ((h * h) * 10000); 
+    return (w / ((h * h) * 10000)); 
  }
-
+getBMI();
  function checkBMI(BMI){
     if (18.5 > BMI) {
         console.log("underweight");
@@ -22,5 +22,6 @@
 function bmicalculator(){
     let BMI = getBMI();
     checkBMI(BMI);
-}
+} 
+
 bmicalculator();
