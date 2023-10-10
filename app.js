@@ -5,8 +5,10 @@
     return(w / (h*h*10000)); 
         
  }
- function bmicalculator(w,h);
-  let BMI = getBMI();
+ function bmicalculator(w,h){
+      let BMI = getBMI();
+ }
+
 
  function bmi(){
         
