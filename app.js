@@ -2,23 +2,25 @@
     const h = Number(prompt("enter your height in cm"));
 
  function getBMI(){
-    return(w / (h*h*10000)); 
-        
- }
- function bmicalculator(w,h){
-      let BMI = getBMI();
+    return w / ((h * h) * 10000); 
  }
 
-
- function bmi(){
-        
-    checkbmi(BMI);
-    if (BMI < 18.5) {
+ function checkBMI(BMI){
+    if (18.5 > BMI) {
         console.log("underweight");
-    } else if (BMI >18.5 && BMI <= 24.9) {
+    } else if (18.5 <= BMI && BMI <= 24.9) {
         console.log("healthy");
-    } else if (BMI > 30) {
+    } else if (25 <= BMI && BMI <= 29.9) {
         console.log("overweight");
+    } else if (30 <= BMI) {
+        console.log("obese");
+    } else {
+        console.log("error");
     }
-    }
-     bmicalculator();
+}
+     
+function bmicalculator(){
+    let BMI = getBMI();
+    checkBMI(BMI);
+}
+bmicalculator();
